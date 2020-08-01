@@ -5,82 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="calculator.css"></link>
+    <!-- <link href="calculator.js"></link> -->
 </head>
 
 <body>
+    <script type="text/javascript" src="calculator.js"></script>
     <div id = "calculator">
-        <div id = "display">Display bar</div>
+        <div id = "display"></div>
         <table>
             <tr>
                 <td>
                     <div>
-                        <button class="number">9</button>
+                        <button class="number" onclick="updateDisplay(9)">9</button>
                     </div>
                 </td>
                 <td>
                     <div>
-                        <button class="number">8</button>
+                        <button class="number" onclick="updateDisplay(8)">8</button>
                     </div>
                 </td>
                 <td>
                     <div>
-                        <button class="number">7</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>
-                        <button class="number">6</button>
+                        <button class="number" onclick="updateDisplay(7)">7</button>
                     </div>
                 </td>
                 <td>
                     <div>
-                        <button class="number">5</button>
-                    </div>
-                </td>
-                <td>
-                    <div>
-                        <button class="number">4</button>
+                        <button class="number">C</button>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div>
-                        <button class="number">3</button>
+                        <button class="number" onclick="updateDisplay(6)">6</button>
                     </div>
                 </td>
                 <td>
                     <div>
-                        <button class="number">2</button>
+                        <button class="number" onclick="updateDisplay(5)">5</button>
                     </div>
                 </td>
                 <td>
                     <div>
-                        <button class="number">1</button>
+                        <button class="number" onclick="updateDisplay(4)">4</button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button class="operate number" onclick="updateDisplay('+')">+</button>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div>
-                        <button class="number">0</button>
+                        <button class="number" onclick="updateDisplay(3)">3</button>
                     </div>
                 </td>
                 <td>
                     <div>
-                        <button class="operate number">+</button>
+                        <button class="number" onclick="updateDisplay(2)">2</button>
                     </div>
                 </td>
                 <td>
                     <div>
-                        <button class="operate number">-</button>
+                        <button class="number" onclick="updateDisplay(1)">1</button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button class="operate number" onclick="updateDisplay('-')">-</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <button class="number" onclick="updateDisplay(0)">0</button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button class="operate number" onclick="updateDisplay('*')">*</button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button class="operate number" onclick="updateDisplay('/')">/</button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button class="number" onclick="updateDisplay('=')">=</button>
                     </div>
                 </td>
             </tr>
         </table>
     </div>
-    
 </body>
 </html>
